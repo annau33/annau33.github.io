@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>YourGift</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">YourGift</div>
+        <nav class="menu">
+            <a href="index.html">Главная</a>
+            <a href="feedback.php">Отзывы</a>
+            <a href="todo.html">Задачи</a>
+        </nav>
+        <div class="user">👤</div>
+    </header>
+
+    <main>
+        <div style="text-align: center; margin-bottom: 40px; color: #666;">
+    <p>Добро пожаловать в YourGift — ваш магазин изысканных ювелирных украшений!</p>
+</div>
+        <h1>Категории</h1>
+        <div class="grid">
+            <div class="card">
+                <img src="Braslet.jpg" alt="Браслеты">
+                <h3>Браслеты</h3>
+            </div>
+            <div class="card">
+                <img src="Coltzo.jpg" alt="Кольца">
+                <h3>Кольца</h3>
+            </div>
+            <div class="card">
+                <img src="Sergi.jpg" alt="Серьги">
+                <h3>Серьги</h3>
+            </div>
+            <div class="card">
+                <img src="Colye.jpg" alt="Колье">
+                <h3>Колье</h3>
+            </div>
+        </div>
+        
+        <div class="contacts">
+            <h2>Контакты</h2>
+            <p> г. Москва, ул. Ювелирная, д. 15</p>
+            <p>☎ +7 (999) 123-45-67</p>
+            <p>✉ info@yourgift.ru</p>
+            <p>🕐 Пн-Пт: 10:00 - 20:00</p>
+        </div>
+    </main>
+
+</body>
+</html>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('Service Worker зарегистрирован с областью:', registration.scope);
+                    })
+                    .catch(error => {
+                        console.log('Ошибка регистрации Service Worker:', error);
+                    });
+            });
+        }
+    </script>
+
+</body>
+</html>
